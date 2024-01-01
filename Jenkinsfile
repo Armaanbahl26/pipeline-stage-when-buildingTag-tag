@@ -4,7 +4,7 @@ pipeline{
         stage("Build Tag"){
             when{
                 // buildingTag()
-                tag "2.0"
+                tag "release-*"
             }
             steps{
                 echo "Hello World Building Tag"
